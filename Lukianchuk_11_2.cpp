@@ -35,9 +35,10 @@ class Vector3D
  }
  void normalize()
  {
-  m_x/=length();
-  m_y/=length();
-  m_z/=length();
+  double lengthcalc=length();
+  m_x/=lengthcalc;
+  m_y/=lengthcalc;
+  m_z/=lengthcalc;
  }
 public:
  Vector3D(double x = 0.0, double y = 0.0, double z = 0.0)
